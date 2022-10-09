@@ -1,0 +1,33 @@
+<h1 mat-dialog-title>Add Car</h1>
+<div mat-dialog-content>
+    <form [formGroup]="carForm">
+        <p>
+            <mat-form-field appearance="standard">
+                <mat-label>Name</mat-label>
+                <input formControlName="name" matInput placeholder="Enter Name">
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="standard">
+                <mat-label>Brand</mat-label>
+                <input formControlName="brand" matInput placeholder="Entger Brand">
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="standard">
+                <mat-label>No. of Seats</mat-label>
+                <input type="number" formControlName="seats" matInput placeholder="Enter No. of Seats">
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="standard">
+                <mat-label>Color</mat-label>
+                <input formControlName="color" matInput placeholder="Enter Color">
+            </mat-form-field>
+        </p>
+    </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close>Cancel</button>
+<button mat-raised-button color="primary" mat-dialog-close (click)="addProduct()">Save</button>
+</div>

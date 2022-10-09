@@ -1,0 +1,10 @@
+mat-form-field {
+    width: 100%;
+}
+div {
+    scrollbar-width: None;
+    -ms-overflow-style: none;
+}
+div::-webkit-scrollbar {
+    display: none;
+  }
