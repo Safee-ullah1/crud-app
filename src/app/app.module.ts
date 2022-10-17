@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { CrudComponent } from './components/crud/crud.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
@@ -15,12 +14,19 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { CreateComponent } from './components/create/create.component';
+import { ListComponent } from './components/list/list.component';
+import { UpdateComponent } from './components/update/update.component';
+import { DeleteComponent } from './components/delete/delete.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CrudComponent,
-    DialogComponent
+    DialogComponent,
+    CreateComponent,
+    ListComponent,
+    UpdateComponent,
+    DeleteComponent
   ],
   imports: [
     BrowserModule,
