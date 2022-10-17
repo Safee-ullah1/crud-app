@@ -7,12 +7,12 @@ import { ListComponent } from './components/list/list.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  @ViewChild(ListComponent) child!:ListComponent;
+  @ViewChild(ListComponent) list!:ListComponent;
   constructor() { }
   
   ngOnInit(): void { }
   refresh(){
-    this.child.getAllCars();
+    this.list.getAllCars();
   }
   
 }
